@@ -1,6 +1,10 @@
 
 # START
 
+# Check Packages are installed
+if("slackr" %in% rownames(installed.packages()) == FALSE) {renv::install("slackr")}
+if("here" %in% rownames(installed.packages()) == FALSE) {renv::install("here")}
+
 # Load Packages
 library(slackr)
 library(here)
